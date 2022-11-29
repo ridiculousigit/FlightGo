@@ -10,4 +10,13 @@
     <color name="white">#F4F6F5</color>
     <color name="whitesmoke_100">#FAF8ED</color>
     <color name="orange">#F66F4D</color>
+    <color name="blue_700">#007AFF</color>
+    <color name="sky_200">#48A5FF</color>
+    <color name="sky_500">#30A8FF</color>
+    <color name="sky_700">#47B5FF</color>
+    <color name="sky_900">#0076CB</color>
+    <color name="smokey_200">#F1F3FF</color>
+    <color name="smokey_500">#DADCE3</color>
+    <color name="smokey_700">#858585</color>
+    <color name="smokey_900">#676666</color>
 </resources>3
