@@ -7,7 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="white">#F4F6F5</color>
     <color name="whitesmoke_100">#FAF8ED</color>
     <color name="orange">#F66F4D</color>
     <color name="blue_700">#007AFF</color>
@@ -19,4 +18,5 @@
     <color name="smokey_500">#DADCE3</color>
     <color name="smokey_700">#858585</color>
     <color name="smokey_900">#676666</color>
-</resources>3
+    <color name="abuabu">#F4F5F5</color>
+</resources>

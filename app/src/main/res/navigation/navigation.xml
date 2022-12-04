@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="binar.academy.flightgo.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_orderOneWayFragment"
+            app:destination="@id/orderOneWayFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_orderRoundTripFragment"
+            app:destination="@id/orderRoundTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderOneWayFragment"
+        android:name="binar.academy.flightgo.view.OrderOneWayFragment"
+        android:label="fragment_order_one_way"
+        tools:layout="@layout/fragment_order_one_way" />
+    <fragment
+        android:id="@+id/orderRoundTripFragment"
+        android:name="binar.academy.flightgo.view.OrderRoundTripFragment"
+        android:label="fragment_order_round_trip"
+        tools:layout="@layout/fragment_order_round_trip" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="binar.academy.flightgo.view.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="binar.academy.flightgo.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+</navigation>
