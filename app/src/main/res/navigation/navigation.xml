@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_loginFragment_to_orderRoundTripFragment"
             app:destination="@id/orderRoundTripFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_availableFlightFragment"
+            app:destination="@id/availableFlightFragment" />
     </fragment>
     <fragment
         android:id="@+id/orderOneWayFragment"
@@ -31,7 +34,11 @@
         android:id="@+id/registerFragment"
         android:name="binar.academy.flightgo.view.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="binar.academy.flightgo.view.SplashFragment"
@@ -44,4 +51,14 @@
             android:id="@+id/action_splashFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/passengerDetailsFragment"
+        android:name="binar.academy.flightgo.view.PassengerDetailsFragment"
+        android:label="fragment_passenger_details"
+        tools:layout="@layout/fragment_passenger_details" />
+    <fragment
+        android:id="@+id/availableFlightFragment"
+        android:name="binar.academy.flightgo.view.AvailableFlightFragment"
+        android:label="fragment_available_flight"
+        tools:layout="@layout/fragment_available_flight" />
 </navigation>
