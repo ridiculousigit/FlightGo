@@ -30,12 +30,13 @@
             android:layout_marginBottom="15dp"
             android:layout_gravity="center_vertical"
             android:text="History"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="24dp" />
 
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/appsBar"
         android:layout_width="match_parent"

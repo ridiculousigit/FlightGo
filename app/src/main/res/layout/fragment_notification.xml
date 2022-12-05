@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.NotificationFragment">
+
+    <LinearLayout
+        android:id="@+id/appsBarNotif"
+        android:orientation="horizontal"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/arrow_backHistoryNotif"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:layout_margin="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/text_Judul"
+            android:layout_width="186dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/appsBarNotif"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="369dp"
+        android:layout_height="103dp">
+
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_reward"
+                android:text="Welcome reward upto "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="50%"
+                android:textColor="@color/orange"
+                android:layout_toRightOf="@+id/tv_reward"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_diskon"
+                android:text="Get upto 50% discount on your"
+                android:layout_below="@id/tv_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                android:text="first booking"
+                android:layout_below="@+id/tv_diskon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
